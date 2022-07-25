@@ -151,7 +151,8 @@ def main():
         root_folder_path = Path(sys.argv[1])
         root_folder_path = Path(os.path.abspath(root_folder_path))
     except IndexError:
-        print("To sort 'myfolder' try: python main.py myfolder")
+        print("To sort 'myfolder' try: clean-folder myfolder")
+        print("or to sort current folder try: clean-folder .")
         sys.exit()
         # shutil.rmtree(r"\python_projects\GoIT\goit_task6\Trashfolder - Copy")
         # shutil.copytree(r"\python_projects\GoIT\goit_task6\Trashfolder",
